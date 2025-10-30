@@ -183,7 +183,7 @@ class MidtermRRT(RRT):
             return x1 + eps * (direction / distance)
 
     def is_free_state(self, obstacle_cloud, x, bx, by):
-        # Returns True if the robot at state "x" is not in collision with the obstacle point cloud, otherwise returns False
+        # Returns True if the robot in pose "x" is not in collision with the obstacle point cloud, otherwise returns False
 
         # State information
         tau = np.reshape(x[:2],(2,1)) #displacement
